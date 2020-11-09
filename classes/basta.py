@@ -18,8 +18,11 @@ class Menu:
             bill_total += self.items[x]
         print('From {menu} menu: ${bill}'.format(menu=self.name, bill=bill_total))
         return bill_total
-
-    #this function was pretty fun to make. When codecademy wanted me to make the available_menus function work, I had to find a way to calculate the time against one time so I needed a function to do this. I replaced the 00:00 a.m./ 00:00 p.m. format to 00.00 and then slices the new string using a .find('.')
+    '''
+    The function below was pretty fun to make. When codecademy wanted me to make the available_menus function work, I had to find a way to calculate the time 
+    against a single time and then return the available menu objects at that time, so I needed a function to do this. I replaced the 00:00 a.m./ 00:00 p.m. time 
+    format to 00.00 and then sliced the new string using a .find('.')
+    '''
     def change_time(string):
         return_num = 0
         if 'a.m.' in string:
@@ -28,7 +31,7 @@ class Menu:
             index = 0
             base_number = ''
             if int(new_string[:new_string.find('.')]) == 12:
-                return_num = int(new_string[:new_string.find('.')]) + int(new_string[new_string.find('.')+1:])/60 - 12
+                return_num += int(new_string[:new_string.find('.')]) + int(new_string[new_string.find('.')+1:])/60 - 12
             else:
                 return_num += int(new_string[:new_string.find('.')]) + int(new_string[new_string.find('.')+1:])/60
         elif 'p.m.' in string:
@@ -37,7 +40,7 @@ class Menu:
             index = 0
             base_number = ''
             if int(new_string[:new_string.find('.')]) == 12:
-                return_num = int(new_string[:new_string.find('.')]) + int(new_string[new_string.find('.')+1:])/60
+                return_num += int(new_string[:new_string.find('.')]) + int(new_string[new_string.find('.')+1:])/60
             else:
                 return_num += 12 + int(new_string[:new_string.find('.')]) + int(new_string[new_string.find('.')+1:])/60
         return return_num
