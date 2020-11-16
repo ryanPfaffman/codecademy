@@ -88,12 +88,12 @@ int main() {
         std::cout << "\nLizard eats Paper\nYou: " << user_points << "\nCPU: " << cpu_points << "\n";
       } else if (cpu_choice == "rock") {
         cpu_points ++;
-        std::cout << "\nSpock vaporizes Rock\nYou: " << user_points << "\nCPU: " << cpu_points << "\n";
+        std::cout << "\nRock crushes lizard\nYou: " << user_points << "\nCPU: " << cpu_points << "\n";
       } else if (cpu_choice == "scissors") {
         user_points ++;
         std::cout << "\nScissors decapitate Lizard\nYou: " << user_points << "\nCPU: " << cpu_points << "\n";
       } else if (cpu_choice == "spock") {
-        user_points ++;
+        cpu_points ++;
         std::cout << "\nLizard poisons Spock\nYou: " << user_points << "\nCPU: " << cpu_points << "\n";
       } else {
         std::cout << "\nLizard ties with Lizard\nYou: " << user_points << "\nCPU: " << cpu_points << "\n";
