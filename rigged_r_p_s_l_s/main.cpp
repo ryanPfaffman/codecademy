@@ -3,7 +3,7 @@
 #include <time.h>
 
 /*
-So for fun, and because I like to expound on the projects on Codecademy, I
+So for fun, and because I like to expatiate on the projects on Codecademy, I
 decided to re-wrtie the rock, paper, scissors, lizard, spock game, but this
 time, make it so the cpu is (rigged), or has an advantage over the user. It was
 pretty simple, I just added two more numbers to the random number generators,
