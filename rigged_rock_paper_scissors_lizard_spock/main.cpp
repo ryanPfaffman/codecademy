@@ -22,7 +22,7 @@ int main() {
   cpu_points = 0;
   std::string cpu_choice, user_choice;
 
-  std::cout << "Playing Rock, Paper, Scissors, Lizard, Spock\nFirst way to 3 wins:\n\n";
+  std::cout << "Playing Rock, Paper, Scissors, Lizard, Spock\nFirst one to 3 wins:\n\n";
 
   while (user_points < 3 && cpu_points < 3) {
     std::cout << "Select rock, paper, scissors, lizard, or spock: (lower case) ";
