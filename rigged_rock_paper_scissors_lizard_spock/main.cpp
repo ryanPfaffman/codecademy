@@ -9,7 +9,9 @@ time, make it so the cpu is (rigged), or has an advantage over the user. It was
 pretty simple, I just added two more numbers to the random number generators,
 initialized a number for each of the specific user choice cases. The two extra
 numbers assigned the cpu_choice string to one of the choices that would beat the
-particular user choice.
+particular user choice. Then, I decided to make it a bit easier for the user
+by making it the program that Codecademy instructed me to create following the
+event that the cpu has 2 points.
 */
 
 int main() {
@@ -20,7 +22,7 @@ int main() {
   cpu_points = 0;
   std::string cpu_choice, user_choice;
 
-  std::cout << "Playing Rock, Paper, Scissors, Lizard, Spock\nBest of 3:\n\n";
+  std::cout << "Playing Rock, Paper, Scissors, Lizard, Spock\nFirst way to 3 wins:\n\n";
 
   while (user_points < 3 && cpu_points < 3) {
     std::cout << "Select rock, paper, scissors, lizard, or spock: (lower case) ";
