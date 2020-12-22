@@ -1,6 +1,6 @@
 using System;
 
-//Project from codecademy
+//project from codecademy. I like the time-wasting FixCases method :)
 
 namespace CaesarCipher
 {
@@ -109,7 +109,7 @@ namespace CaesarCipher
 
       Console.WriteLine($"First Change: {firstChangeS}");
 
-      string changeBack = FixCases(String.Join("", ShiftBack(firstChangeS.ToLower().ToCharArray())).ToCharArray(), lowerOrUpper);
+      string changeBack = FixCases(ShiftBack(firstChangeS.ToLower().ToCharArray()), lowerOrUpper);
 
       Console.WriteLine($"Seconds Change: {changeBack}");
     }
