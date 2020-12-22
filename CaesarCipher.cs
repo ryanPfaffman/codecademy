@@ -104,7 +104,6 @@ namespace CaesarCipher
 
       Console.WriteLine($"FixCasesTest: {FixCases(firstChange, lowerOrUpper)}");
       
-
       string firstChangeS = String.Join("", firstChange);
 
       Console.WriteLine($"First Change: {firstChangeS}");
