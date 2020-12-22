@@ -10,8 +10,8 @@ pretty simple, I just added two more numbers to the random number generators,
 initialized a number for each of the specific user choice cases. The two extra
 numbers assigned the cpu_choice string to one of the choices that would beat the
 particular user choice. Then, I decided to make it a bit easier for the user
-by making it the program that Codecademy instructed me to create following the
-event that the cpu has 2 points.
+by making it the program that Codecademy instructed me to create if the 
+cpu has 2 points.
 */
 
 int main() {
